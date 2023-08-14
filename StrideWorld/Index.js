@@ -65,10 +65,33 @@ const nav = document.getElementById("ListItem");
 if (bar) {
     bar.addEventListener("click", () => {
         nav.classList.add("active")
-  });
+    });
 }
 if (close) {
-  close.addEventListener("click", () => {
-    nav.classList.remove("active");
-  });
+    close.addEventListener("click", () => {
+        nav.classList.remove("active");
+    });
 }
+
+
+
+// toggling of Mini cart
+
+// let cartBtnPts = document.getElementById("TestSystem")
+
+// cartBtnPts.addEventListener("click", () => {
+//     let a = "aayush"
+//     console.log(a);
+// }
+// )
+
+document.getElementById('TestSystem').onclick = function() {
+    let CartDivBox = document.getElementById("Mini-Cart")
+    CartDivBox.classList.toggle("togglecart")
+}
+
+
+
+
+//
+//  cartDiv.classList.toggle("ClickCartBtn");

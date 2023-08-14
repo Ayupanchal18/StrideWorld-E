@@ -3,9 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Borel&family=PT+Sans&family=Roboto:wght@300&display=swap");
-  @import url('https://fonts.googleapis.com/css2?family=Borel&family=PT+Sans&family=Roboto:wght@300&family=Work+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=PT+Sans&family=Roboto:wght@300&family=Work+Sans&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Borel&family=Lato:wght@700&family=PT+Sans&family=Roboto:wght@300&family=Work+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Lato:wght@700&family=PT+Sans&family=Roboto:wght@300&family=Work+Sans&display=swap");
 
 * {
   margin: 0px;
@@ -126,6 +126,10 @@ nav {
   padding: 25px 20px;
   font-family: "Didact Gothic", sans-serif;
   text-align: center;
+  background-color: rgb(247, 242, 242);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 /* .SectionOne .SectionTwo .Sectionthird .SectionFourth{
   text-align: center;
@@ -159,6 +163,10 @@ nav {
 .Items2 {
   display: flex;
   align-items: center;
+  position: relative;
+  width: 300px;
+  height: 35px;
+  align-items: center;
 }
 #Search:focus {
   outline: none;
@@ -166,6 +174,7 @@ nav {
 #SearchBtn {
   margin-right: 20px;
 }
+
 #Signin {
   border-radius: 8px;
   width: 80px;
@@ -201,93 +210,6 @@ nav {
 #Signup:hover {
   background-color: #0a65ac;
   color: white;
-}
-
-.input-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  position: relative;
-}
-
-.input {
-  border-style: none;
-  height: 50px;
-  width: 50px;
-  padding: 10px;
-  outline: none;
-  border-radius: 50%;
-  transition: 0.5s ease-in-out;
-  background-color: white;
-  box-shadow: 0px 0px 3px #f3f3f3;
-  padding-right: 40px;
-  color: #fff;
-}
-
-.input::placeholder,
-.input {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 17px;
-}
-
-.input::placeholder {
-  color: #8f8f8f;
-}
-
-.icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  right: 0px;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  outline: none;
-  border-style: none;
-  border-radius: 50%;
-  pointer-events: painted;
-  background-color: transparent;
-  transition: 0.2s linear;
-}
-
-.icon:focus ~ .input,
-.input:focus {
-  box-shadow: none;
-  width: 250px;
-  border-radius: 0px;
-  background-color: transparent;
-  border-bottom: 3px solid #ff2e63;
-  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
-}
-
-.container-input {
-  position: relative;
-}
-
-.input {
-  padding: 10px 0px 10px 40px;
-  border-radius: 9999px;
-  border: solid 1px #333;
-  transition: all 0.2s ease-in-out;
-  outline: none;
-  opacity: 0.8;
-  height: 35px;
-  margin-right: 10px;
-}
-
-.container-input svg {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translate(0, -50%);
-}
-
-.input:focus {
-  opacity: 1;
-  width: 200px;
 }
 
 /* landing Page */
@@ -1446,7 +1368,7 @@ nav {
 .Pdiscription {
   margin-top: 50px;
 }
-.Pdiscription p{
+.Pdiscription p {
   font-size: 14px;
   font-family: "Didact Gothic", sans-serif;
 }
@@ -1458,33 +1380,32 @@ nav {
   background-color: blue; 
 } */
 /* Responsive nav bar */
-.CustomerReviewdiv{
+.CustomerReviewdiv {
   margin-top: 50px;
   font-weight: 500;
 }
-.CustomerReviewdiv h1{
-font-size: 35px;
-font-family: 'Work Sans', sans-serif;
-color: #828fa1;
-
+.CustomerReviewdiv h1 {
+  font-size: 35px;
+  font-family: "Work Sans", sans-serif;
+  color: #828fa1;
 }
-.crntAndtotalRating{
+.crntAndtotalRating {
   align-items: center;
 }
-.CurrentRating h1{
+.CurrentRating h1 {
   font-size: 30px;
   margin-right: 10px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   color: black;
 }
-.totalRating h2{
+.totalRating h2 {
   font-size: 12px;
 }
-.WriteAreviewButton{
+.WriteAreviewButton {
   margin: 20px 0px;
 }
 
-.WriteAreviewButton button{
+.WriteAreviewButton button {
   width: 250px;
   background-color: gray;
   color: white;
@@ -1495,24 +1416,24 @@ color: #828fa1;
   font-family: "Didact Gothic", sans-serif;
   align-items: center;
 }
-.WriteAreviewButton button:hover{
+.WriteAreviewButton button:hover {
   cursor: pointer;
   background-color: rgb(190, 178, 178);
 }
 .CustomerReviewContainer {
   margin: 20px 0px;
 }
-.CustomerReviewContainer h2{
+.CustomerReviewContainer h2 {
   font-size: 15px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 3px;
 }
-.CustomerReviewContainer h5{
+.CustomerReviewContainer h5 {
   font-size: 10px;
   margin-bottom: 8px;
   font-family: "Didact Gothic", sans-serif;
 }
-.CustomerReviewContainer h4{
+.CustomerReviewContainer h4 {
   font-size: 17px;
   margin-bottom: 5px;
   font-family: "Didact Gothic", sans-serif;
@@ -1520,11 +1441,11 @@ color: #828fa1;
 .ratingStars {
   margin-bottom: 5px;
 }
-.SingleProductSection h3 a{
+.SingleProductSection h3 a {
   color: black;
   text-decoration: none;
 }
-.CustomerReviewContainer p{
+.CustomerReviewContainer p {
   font-size: 10px;
   margin-bottom: 5px;
   font-family: "Didact Gothic", sans-serif;
@@ -1536,21 +1457,240 @@ color: #828fa1;
   justify-content: space-between;
   margin-top: 20px;
 }
-.FeaturedText h2{
+.FeaturedText h2 {
   font-size: 30px;
   font-family: "poppins", sans-serif;
 }
-.HeaderofRecommendSection{
+.HeaderofRecommendSection {
   justify-content: space-between;
   align-items: center;
 }
-.ViewAllBtnInFeaturedProducts a{
+.ViewAllBtnInFeaturedProducts a {
   text-decoration: none;
   color: black;
 }
-.Recomendedsection{
+.Recomendedsection {
   margin-top: 20px;
 }
+
+/* Shop Section Page */
+.shopSection {
+  width: 80vw;
+  margin: auto;
+  margin-top: 100px;
+}
+.ShoptitleTitle {
+  margin-bottom: 20px;
+}
+.ShoptitleTitle p {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 30px;
+  font-family: "poppins", sans-serif;
+  color: #ff0000;
+}
+.ShopFilters {
+  text-align: end;
+  margin-top: 20px;
+}
+
+.ShopFilters select {
+  height: 20px;
+  font-family: "Didact Gothic", sans-serif;
+}
+.ShopFilters select option {
+  font-family: "Didact Gothic", sans-serif;
+}
+.ShopFilters label {
+  font-family: "Didact Gothic", sans-serif;
+}
+.ShopFilters select:focus {
+  outline: none;
+}
+.CatagoriesSection {
+  width: 30%;
+  padding: 10px 20px;
+}
+.SizeCatagory {
+  display: flex;
+  flex-direction: column;
+}
+
+.SizeCatagory h3 {
+  font-size: 16px;
+  font-family: "Didact Gothic", sans-serif;
+  margin-bottom: 10px;
+}
+
+.BrandCatogary h3 {
+  font-size: 16px;
+  font-family: "Didact Gothic", sans-serif;
+  margin-bottom: 10px;
+}
+
+.ChoseColor h3 {
+  font-size: 16px;
+  font-family: "Didact Gothic", sans-serif;
+  margin-bottom: 10px;
+}
+.PriceRange h3 {
+  font-size: 16px;
+  font-family: "Didact Gothic", sans-serif;
+  margin-bottom: 10px;
+}
+.BrandCatogary {
+  display: flex;
+  flex-direction: column;
+}
+
+.PriceRange h2 {
+  font-size: 16px;
+  font-family: "Didact Gothic", sans-serif;
+  margin-bottom: 10px;
+}
+.RangeOfPrice {
+  width: 100px;
+  justify-content: space-between;
+}
+/* .PriceRange{
+ 
+}
+.PriceRange input{
+  width: 100px;
+} */
+#CatagoryHr {
+  margin: 10px 0px;
+}
+
+.PriceRange input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+}
+.PriceRange input[type="range"]:focus {
+  outline: 0;
+}
+.PriceRange input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background-color: gray;
+  box-shadow: none;
+  border: 0;
+}
+.PriceRange input[type="range"]::-webkit-slider-thumb {
+  z-index: 2;
+  position: relative;
+  height: 18px;
+  width: 14px;
+  background-color: #ff0000;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+.CatagoriesSection {
+  width: 35%;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.Mini-Cart {
+  width: 400px;
+  background-color: rgb(248, 244, 244);
+  position: absolute;
+  top: 100%;
+  overflow: auto;
+  right: 0;
+  padding: 10px 10px;
+  /* z-index: 1000; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  display: none;
+}
+.cartIconInNavbar:hover .Mini-Cart{
+  display: block;
+}
+.dropdown:hover #ClickCartNowtest{
+  font-size: 200px;
+}
+.cartIconInNavbar:hover .MinicartContent{
+  display: block;
+}
+.cartIconInNavbar {
+  margin-left: 10px;
+}
+/* .togglecart{
+  display: none;
+} */
+.MinicartProductImage img {
+  height: 60px;
+}
+.MiniCartHeading h2 {
+  font-size: 16px;
+  font-family: "poppins", sans-serif;
+  margin-bottom: 10px;
+}
+.MinicartContent {
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.MinicartProductDetails {
+  padding: 0px 5px;
+}
+.MinicartProductDetails a h3 {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  font-family: "Didact Gothic", sans-serif;
+}
+.MinicartProductDetails a {
+  text-decoration: none;
+}
+.MinicartProductDetails a h4 {
+  font-size: 10px;
+  color: black;
+  text-decoration: none;
+  font-family: "Didact Gothic", sans-serif;
+}
+.MinicartProductDetails h5 {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  font-family: "Didact Gothic", sans-serif;
+}
+.MiniCartProductRemoverBtndiv {
+  margin-left: 50px;
+}
+.Minicarttotal {
+  margin-top: 10px;
+}
+.Minicarttotal h1 {
+  font-size: 25px;
+  font-family: "Work Sans", sans-serif;
+}
+.Minicarttotal h2 {
+  font-size: 14px;
+}
+.MiniCartButton button {
+  height: 35px;
+  width: 100px;
+  background-color: gray;
+  color: white;
+  border: 0;
+  border-radius: 25px;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+
+.MiniCartButton button:hover {
+  background-color: rgb(197, 188, 188);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 477px) {
   .dropdown {
     display: none;
