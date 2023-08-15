@@ -7,6 +7,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Borel&family=Lato:wght@700&family=PT+Sans&family=Roboto:wght@300&family=Work+Sans&display=swap");
 
+  @import url('https://fonts.googleapis.com/css2?family=Borel&family=Inter:wght@600&family=Lato:wght@700&family=PT+Sans&family=Roboto:wght@300&family=Work+Sans&display=swap');
+
 * {
   margin: 0px;
   padding: 0px;
@@ -37,20 +39,142 @@ h2 {
 }
 .account {
   margin-left: 10px;
+  /* height: 35px; */
 }
-/* .P1button {
-  background-color: white;
-  color: black;
+.Search-input input {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 0px 10px;
   border-radius: 4px;
-  border: 1px solid transparent;
-  font-size: 14px;
-  font-weight: 600;
-  width: 60px;
+  border: 0;
   height: 30px;
-  transition: 0.2s ease-out;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-} */
+  font-size: 14px;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 500;
+}
+.Search-input input:focus {
+  outline: 0px;
+}
+
+.CartBottomLeft table {
+  width: 100%;
+  border-collapse: separate;
+  white-space: normal;
+  line-height: normal;
+  font-weight: normal;
+  font-size: medium;
+  font-style: normal;
+  text-align: start;
+  border-spacing: 0px !important;
+  font-variant: normal;
+  /* border: none;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px */
+}
+
+.CartBottomLeft table thead tr th {
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.CartBottomLeft table tbody tr td img {
+  height: 100px;
+}
+.CartBottomLeft table tbody tr td {
+  text-align: center;
+}
+.CartBottomLeft table tbody tr td:nth-child(2) {
+  font-family: "Didact Gothic", sans-serif;
+  text-align: start;
+}
+.CartBottomLeft table thead tr th:nth-child(2) {
+  text-align: start;
+}
+.CartBottomLeft table tbody tr td:nth-child(1) {
+  text-align: start;
+}
+.CartBottomLeft table tbody tr td:nth-child(3) {
+  font-family: "Work Sans", sans-serif;
+}
+.CartBottomLeft table tbody tr td:nth-child(4) .CartQuantityCounter {
+  margin: auto;
+}
+.CartBottomLeft table tbody tr td:nth-child(5) {
+  font-family: "Work Sans", sans-serif;
+}
+.CartBottomLeft table tbody tr td a {
+  font-family: "Didact Gothic", sans-serif;
+  color: black;
+  text-decoration: none;
+}
+.CartBottomLeft table thead {
+  height: 50px;
+  background-color: #ff0000db;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.CartQuantityCounter {
+  border: 1px solid black;
+  background-color: #fffffd;
+  color: black;
+  width: 50px;
+  height: 25px;
+  align-items: center;
+  text-align: center;
+}
+.CartQuantityCounter button {
+  font-size: 20px;
+  border: 0;
+  background-color: #fffffd;
+  cursor: pointer;
+  width: 15px;
+  width: 20px;
+}
+.CartQuantityCounter input {
+  border: 0;
+  background-color: #fffffd;
+  font-size: 17px;
+  font-family: "Work Sans", sans-serif;
+  width: 20px;
+  height: 20px;
+}
+.CartQuantityCounter input:focus {
+  outline: none;
+}
+.removeMainCartItem {
+  margin-left: 20px;
+}
+.BillingDiv table {
+  width: 100%;
+  border-collapse: separate;
+  white-space: normal;
+  line-height: normal;
+  font-weight: normal;
+  font-size: medium;
+  font-style: normal;
+  border-spacing: 0px !important;
+  font-variant: normal;
+  margin: 20px 0px;
+  
+}
+.BillingDiv table tbody tr  {
+  height: 50px;
+  font-family: 'Inter', sans-serif;
+  border-bottom: 1px solid black;
+  text-transform: uppercase;
+  font-size: 14px;
+  
+}
+.BillingDiv table tbody tr td {
+  border-bottom: 1px solid gray;
+}
+.BillingDiv table tbody tr:nth-child(4) td{
+  border: 0;
+}
+.BillingDiv table tbody tr:nth-child(4) th{
+  border: 0;
+}
+.BillingDiv table tbody tr th {
+  border-bottom: 1px solid gray;
+}
 
 .P1button:hover {
   cursor: pointer;
@@ -162,10 +286,10 @@ nav {
 }
 .Items2 {
   display: flex;
-  align-items: center;
   position: relative;
   width: 300px;
   height: 35px;
+  justify-content: space-evenly;
   align-items: center;
 }
 #Search:focus {
@@ -252,12 +376,30 @@ nav {
 .Dis p span {
   color: #e23e57;
 }
-
+.ContactSectionRight button{
+  width: 70px;
+  height: 35px;
+  background-color: gray;
+  color: white;
+  padding: 0px 10px;
+  border: 0;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+.ContactSectionRight button:hover{
+ color: black;
+ background-color: rgb(208, 205, 205);
+ cursor: pointer;
+}
 .Shop {
   width: 100px;
   margin-top: 10px;
   background-color: #ff2e63;
   color: white;
+}
+#Shop a{
+  color: black;
+  text-decoration: none;
 }
 #Shop {
   height: 35px;
@@ -545,7 +687,7 @@ nav {
   padding: 10px 20px;
 }
 .BImage img {
-  height: 225px;
+  height: 200px;
 }
 .BText {
   display: flex;
@@ -558,7 +700,7 @@ nav {
   color: black;
 }
 .BText p {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Didact Gothic", sans-serif;
 }
 .BlogTexts {
@@ -916,7 +1058,7 @@ nav {
   font-size: 13px;
 }
 .authorNameAnddetail h5 {
-  font-size: 11px;
+  font-size: 10px;
 }
 .BlogItems {
   flex-wrap: wrap;
@@ -1064,6 +1206,9 @@ nav {
   font-family: "Didact Gothic", sans-serif;
   color: rgb(81, 80, 80);
 }
+.AdidasProductDiv   {
+  margin: 15px 0px 15px 0px;
+}
 
 .HeadingOfAdidas {
   text-align: center;
@@ -1089,7 +1234,6 @@ nav {
 /* Campus Product */
 .CampusProducts {
   flex-wrap: wrap;
-  gap: 10px;
   justify-content: space-between;
 }
 
@@ -1118,8 +1262,12 @@ nav {
 /* Nike Product */
 .NikeProducts {
   flex-wrap: wrap;
-  gap: 10px;
   justify-content: space-between;
+  row-gap: 10px;
+}
+.BrandNikeitem {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .HeadingOfNike {
@@ -1147,7 +1295,6 @@ nav {
 
 .PumaProduct {
   flex-wrap: wrap;
-  gap: 10px;
   justify-content: space-between;
 }
 
@@ -1176,9 +1323,11 @@ nav {
 /* Cart CSS */
 .CartBottom {
   margin-top: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 .CartDiv {
-  width: 70vw;
+  width: 80vw;
   margin: auto;
   margin-top: 100px;
 }
@@ -1216,7 +1365,7 @@ nav {
   display: flex;
 }
 .CartBottomLeft {
-  width: 75%;
+  width: 74%;
 }
 .CartBottomLeftTop {
   justify-content: space-between;
@@ -1238,17 +1387,37 @@ nav {
 }
 
 .CartBottomRight {
-  width: 25%;
+  width: 24%;
+  background-color: #f0f3f2;
+}
+
+.Address {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  font-family: "Didact Gothic", sans-serif;
+  margin-top: 20px;
 }
 .Address h2 {
   color: black;
   font-family: "roboto", "sans-serif";
   font-size: 16px;
 }
+.coupon {
+  justify-content: center;
+  margin-top: 20px;
+
+}
 .coupon input {
   height: 35px;
   width: 190px;
   border: 2px solid black;
+padding: 0px 10px;
+font-family: "Didact Gothic", sans-serif;
+font-size: 16px;
 }
 .coupon button {
   height: 35px;
@@ -1256,14 +1425,106 @@ nav {
   background-color: black;
   color: white;
 }
+.coupon button:hover {
+  cursor: pointer;
+  background-color: rgb(48, 47, 47);
+}
 
 .Selectcountry {
-  height: 100px;
+  flex-direction: column;
+  height: 50px;
+  margin: auto;
+  text-align: start;
+  text-transform: uppercase;
+  font-size: 13px;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.Selectcountry select {
+  height: 50px;
+  width: 180px;
+  border: 0;
+}
+.Selectcountry select:focus {
+  outline: none;
+}
+.SelectState select {
+  height: 50px;
+  width: 180px;
+  border: 0;
+}
+.SelectState select:focus {
+  outline: none;
+}
+.SelectState {
+  flex-direction: column;
+  height: 50px;
+  margin: auto;
+  text-align: start;
+  text-transform: uppercase;
+  font-size: 13px;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.ZipcodeInput {
+  height: 50px;
+  width: 100%;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+}
+.ZipcodeInput input {
+  width: 180px;
+  height: 35px;
+  margin: auto;
+  font-size: 14px;
+  padding: 0px 10px;
+  border: 2px solid gray;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.ZipcodeInput input:focus {
+  outline: none;
+}
+.ZipcodeInput h3 {
+  font-size: 13px;
+  font-family: "Didact Gothic", sans-serif;
+  text-transform: uppercase;
+  text-align: start;
+  margin: auto;
+}
+.CheckoutPage {
+  width: 100%;
+text-align: center;
+}
+.CheckoutPage {
+  margin-bottom: 20px;
+}
+.CheckoutPage button{
+  width: 200px;
+  height: 35px;
+  background-color: gray;
+  color: white;
+  font-size: 12px;
+  border: 0;
+  border-radius: 20px;
+  padding: 0px 10px;
+  transition: 0.2s ease-in;
+  font-family: "Didact Gothic", sans-serif;
+}
+.CheckoutPage button:hover{
+  color: black;
+  background-color: rgb(228, 221, 221);
+  cursor: pointer;
 }
 .SingleProductSection {
   width: 80vw;
   margin: auto;
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 .SingleProductSection h3 {
   margin-bottom: 10px;
@@ -1468,6 +1729,7 @@ nav {
 .ViewAllBtnInFeaturedProducts a {
   text-decoration: none;
   color: black;
+  font-family: "Didact Gothic", sans-serif;
 }
 .Recomendedsection {
   margin-top: 20px;
@@ -1603,20 +1865,15 @@ nav {
   overflow: auto;
   right: 0;
   padding: 10px 10px;
-  /* z-index: 1000; */
+  z-index: 1000;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   display: none;
 }
-.cartIconInNavbar:hover .Mini-Cart{
+.cartIconInNavbar:hover .Mini-Cart {
   display: block;
 }
-.dropdown:hover #ClickCartNowtest{
-  font-size: 200px;
-}
-.cartIconInNavbar:hover .MinicartContent{
-  display: block;
-}
+
 .cartIconInNavbar {
   margin-left: 10px;
 }
@@ -1624,7 +1881,7 @@ nav {
   display: none;
 } */
 .MinicartProductImage img {
-  height: 60px;
+  height: 70px;
 }
 .MiniCartHeading h2 {
   font-size: 16px;
@@ -1634,7 +1891,7 @@ nav {
 .MinicartContent {
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 10px;
+  margin: 10px 10px;
 }
 .MinicartProductDetails {
   padding: 0px 5px;
@@ -1671,7 +1928,10 @@ nav {
   font-family: "Work Sans", sans-serif;
 }
 .Minicarttotal h2 {
-  font-size: 14px;
+  font-size: 12px;
+}
+.MiniCartButton {
+  margin-top: 20px;
 }
 .MiniCartButton button {
   height: 35px;
@@ -1684,11 +1944,41 @@ nav {
   font-size: 14px;
   font-family: "Didact Gothic", sans-serif;
 }
-
+.MiniCartButton button a{
+ color: white;
+ text-decoration: none;
+}
 
 .MiniCartButton button:hover {
   background-color: rgb(197, 188, 188);
   cursor: pointer;
+}
+.topBtn{
+  height: 40px;
+  width: 30px;
+  background-color: rgb(250, 247, 247);
+  border: 1px solid gray;
+  border-radius: 4px;
+  text-align: center;
+  padding: 1px 2px;
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  z-index: 999;
+}
+.topBtn i{
+ color: white;
+}
+.topBtn button{
+  color: black;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-family: "Didact Gothic", sans-serif;
+}
+.topBtn button a{
+  color: black;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 477px) {
@@ -1881,6 +2171,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 40px;
+    position: relative;
   }
 }
 @media (max-width: 391px) {

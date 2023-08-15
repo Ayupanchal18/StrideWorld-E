@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.js"
         integrity="sha512-jrYR1cG7wwq2l+uNH+XXF18hjN+j8MBjM2PK2+fV/nAIHKxqpg479rOWFOxTpCnyPMZeGAi+eDAxHyrzTzkyRg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
+        </script>
 </head>
 
 <body>
@@ -139,15 +139,8 @@
                 </ul>
             </div>
             <div class="Items2">
-                <div class="container-input">
-                    <input type="text" name="text" class="input">
-                    <a href="#">
-                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                            clip-rule="evenodd">
-                            <path
-                                d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z" />
-                        </svg>
-                    </a>
+                <div class="Search-input">
+                    <input type="text" name="text" placeholder="Search Here"  class="input">
                 </div>
                 <div class="account">
                     <a href=""><i class="fa-solid fa-user fa-xl" style="color: #000000;"></i></a>
@@ -156,7 +149,78 @@
                     <i class="fa-solid fa-bars fa-xl " id="MobilenavBarToggle" style="color: #000000;"></i>
                 </div>
                 <div class="cartIconInNavbar">
-                    <i class="fa-solid fa-cart-shopping fa-lg" id="CartButtonId"  style="color: #000000;"></i>
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping fa-xl" id="IconOfCart" style="color: #000000;">
+                        </i>
+                    </a>
+                    <div class="Mini-Cart">
+                        <div class="MiniCartHeading">
+                            <h2><span>5</span> items In Cart</h2>
+                        </div>
+                        <hr>
+                        <div class="MinicartContent D-F">
+                            <div class="MinicartProductImage">
+                                <img src="../Assets/Adidas Product/01 - Copy.jpg" alt="">
+                            </div>
+                            <div class="MinicartProductDetails">
+                                <a href="#">
+                                    <h3>TRC Blaze Knit Unisex Sneakers</h3>
+                                </a>
+                                <a href="../Brand page links/Puma.html">
+                                    <h4>By PUMA</h4>
+                                </a>
+                                <h5>1999 ₹</h5>
+                            </div>
+                            <div class="MiniCartProductRemoverBtndiv">
+                                <a href="#"><i class="fa-solid fa-x fa-sm" style="color: #000000;"></i></a>
+                            </div>
+                        </div>
+                        <div class="MinicartContent D-F">
+                            <div class="MinicartProductImage">
+                                <img src="../Assets/Adidas Product/03 - Copy.jpg" alt="">
+                            </div>
+                            <div class="MinicartProductDetails">
+                                <a href="#">
+                                    <h3>TRC Blaze Knit Unisex Sneakers</h3>
+                                </a>
+                                <a href="../Brand page links/Puma.html">
+                                    <h4>By PUMA</h4>
+                                </a>
+                                <h5>1999 ₹</h5>
+                            </div>
+                            <div class="MiniCartProductRemoverBtndiv">
+                                <a href="#"><i class="fa-solid fa-x fa-sm" style="color: #000000;"></i></a>
+                            </div>
+                        </div>
+                        <div class="MinicartContent D-F">
+                            <div class="MinicartProductImage">
+                                <img src="../Assets/Adidas Product/02 - Copy.jpg" alt="">
+                            </div>
+                            <div class="MinicartProductDetails">
+                                <a href="#">
+                                    <h3>TRC Blaze Knit Unisex Sneakers</h3>
+                                </a>
+                                <a href="../Brand page links/Puma.html">
+                                    <h4>By PUMA</h4>
+                                </a>
+                                <h5>1999 ₹</h5>
+                            </div>
+                            <div class="MiniCartProductRemoverBtndiv">
+                                <a href="#"><i class="fa-solid fa-x fa-sm" style="color: #000000;"></i></a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="Minicarttotal">
+                            <h2>Subtotal</h2>
+                            <h1>
+                                1755$
+                            </h1>
+                        </div>
+                        <div class="MiniCartButton">
+                            <button><a href="./Shopping, Cart, Shipping, Bill pages/cart.html">Checkout</a></button>
+                            <button><a href="./Shopping, Cart, Shipping, Bill pages/Cart.html">View Cart</a></button>
+                        </div>
+                    </div>
                 </div>
         </nav>
     </section>
@@ -170,8 +234,8 @@
                     you take. Elevate your style game with these exquisite heels that are designed to capture attention
                     and steal the spotlight.
                 </p>
-                <button id="Shop">
-                    <span>Continue</span>
+                <button id="Shop" >
+                    <a href="./Shopping, Cart, Shipping, Bill pages/shop.html"><span>Shop Now</span></a>
                     <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
                         <path
@@ -1020,7 +1084,7 @@
                 <p>"Stepping into Style: Unveiling the World of Footwear Fashion"</p>
             </div>
             <div class="ViewAllBtnInFeaturedProducts">
-                <a href="#">ViewAll <i class="fa-solid fa-right-long fa-sm" style="color: #000000;"></i></a>
+                <a href="./Web-Links/Blog.html"><Strong>ViewAll </Strong><i class="fa-solid fa-arrow-right fa-sm" style="color: #000000;"></i></a>
             </div>
         </div>
         <div class="Blogs ">
@@ -1102,6 +1166,10 @@
         </div>
     </section>
     <section class="footer">
+        <div class="topBtn">
+            <i class="fa-solid fa-arrow-up fa-sm" style="color: #000000;"></i>
+            <button> <a href="#"><strong>Top</strong></a> </button>
+        </div>
         <div class="f-1">
             <a href="./Index.html"><img src="./Assets/logo1.png" alt="logo"></a>
             <h4>Contact</h4>

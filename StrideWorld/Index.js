@@ -75,23 +75,27 @@ if (close) {
 
 
 
-// toggling of Mini cart
+// // toggling of Mini cart
 
-// let cartBtnPts = document.getElementById("TestSystem")
+// let cartBtnPts = document.getElementsByClassName("cartIconInNavbar")
 
 // cartBtnPts.addEventListener("click", () => {
-//     let a = "aayush"
-//     console.log(a);
+//     let CartDivBox = document.getElementById("MiniCart")
+//     if (CartDivBox.style.display = "none") {
+//         CartDivBox.style.display = "block"
+//     } else {CartDivBox.style.display = "block"
+        
+//     }
 // }
 // )
 
-document.getElementById('TestSystem').onclick = function() {
-    let CartDivBox = document.getElementById("Mini-Cart")
-    CartDivBox.classList.toggle("togglecart")
-}
+// // document.getElementById('IconOfCart').onclick = function() {
+// //     let CartDivBox = document.getElementsByClassName("Mini-Cart")
+// //     CartDivBox.classList.toggle("togglecart")
+// // }
 
 
 
 
-//
-//  cartDiv.classList.toggle("ClickCartBtn");
+// //
+// //  cartDiv.classList.toggle("ClickCartBtn");

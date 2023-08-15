@@ -19,17 +19,106 @@
                         <a href="../Index.html"> <img id="Logo" src="../Assets/logo1.png" alt="logo"></a>
                     </div>
                     <div class="D-F" id="ListItem">
-                        <a class="Links" href="Index.html">
+                        <div class="MobilenavBarToggleofffDiv">
+                            <i class="fa-solid fa-bars fa-xl " id="MobilenavBarOff" style="color: #000000;"></i>
+                        </div>
+                        <a class="Links" href="../Index.html">
                             <li>HOME</li>
                         </a>
-                        <li>
+                        <li class="MobilenavBarToggleOff">
+                            <div>
+                                <i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
+                            </div>
+                        </li>
+                        <li id="CatmenuMobileOff">
                             <div class="dropdown">
                                 <button>PRODUCTS</button>
                                 <div class="dropdown-content">
-                                    <a rel="noopener" target="_blank" href="#">Shoes</a>
-                                    <a rel="noopener" target="_blank" href="#">Flip-Flop</a>
-                                    <a rel="noopener" target="_blank" href="#">Sandals</a>
-                                    <a rel="noopener" target="_blank" href="#">Slips</a>
+                                    <!-- <ul>
+                                        <li><a rel="noopener" target="_blank" href="#">Shoes</a></li>
+                                        <li><a rel="noopener" target="_blank" href="#">Flip-Flop</a></li>
+                                        <li><a rel="noopener" target="_blank" href="#">Sandals</a></li>
+                                        <li><a rel="noopener" target="_blank" href="#">Slips</a></li>
+                                        <li><a rel="noopener" target="_blank" href="#">Slips</a></li>
+                                        <li><a rel="noopener" target="_blank" href="#">Slips</a></li>
+                                    </ul> -->
+                                    <div class="Megaproductslists D-F">
+                                        <div class="SectionOne">
+                                            <ul>
+                                                <li id="top-name">SHOES</li>
+                                                <br>
+                                                <a href="#">
+                                                    <li>Running Shoes</li>
+                                                </a>
+                                                <a href="#">
+                                                    <li>Walking Shoes</li>
+                                                </a>
+                                                <a href="#">
+                                                    <li>Casual Shoes</li>
+                                                </a>
+                                                <a href="#">
+                                                    <li>Sports Shoes</li>
+                                                </a>
+                                                <a href="#">
+                                                    <li>Sneakers</li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                        <div class="SectionTwo">
+                                            <ul>
+                                                <li id="top-name">SANDLES AND FLOATERS</li>
+                                                <br>
+                                                <a href="#">
+                                                    <li>Casual</li>
+                                                </a>
+                                                <a href="#">
+                                                    <li>Sports</li>
+                                                </a>
+                                                <a href="#">
+                                                    <li>Clogs</li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                        <div class="Sectionthird">
+                                            <ul>
+                                                <li id="top-name">SLIPPERS</li>
+                                                <br>
+                                                <a href="#">
+                                                    <li>Flip-Flop</li>
+                                                </a>
+                                                <a href="#">
+                                                    <li>Slides</li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                        <div class="SectionFourth">
+                                            <ul>
+                                                <li id="top-name">BRANDS</li>
+                                                <br>
+                                                <a href="../Brand page links/Adidas.html">
+                                                    <li>Adidas</li>
+                                                </a>
+                                                <a href="../Brand page links/Nike.html">
+                                                    <li>Nike</li>
+                                                </a>
+                                                <a href="../Brand page links/Puma.html">
+                                                    <li>Puma</li>
+                                                </a>
+                                                <a href="../Brand page links/Campus.html">
+                                                    <li>Campus</li>
+                                                </a>
+                                                <a href="#">
+                                                    <li>Asian</li>
+                                                </a>
+                                                <a href="#">
+                                                    <li>Reebok</li>
+                                                </a>
+                                                <a href="#">
+                                                    <li>New Balance</li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -46,18 +135,86 @@
                 </ul>
             </div>
             <div class="Items2">
-                <div class="container-input">
-                    <input type="text" name="text" class="input">
-                    <a href="#"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                            clip-rule="evenodd">
-                            <path
-                                d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z" />
-                        </svg> </a>
-                </div>
                 <div class="account">
                     <a href="#"><i class="fa-solid fa-user fa-xl" style="color: #000000;"></i></a>
                 </div>
-            </div>
+                <div class="MobilenavBarToggleDiv">
+                    <i class="fa-solid fa-bars fa-xl " id="MobilenavBarToggle" style="color: #000000;"></i>
+                </div>
+                <div class="cartIconInNavbar">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping fa-xl" id="IconOfCart" style="color: #000000;">
+                        </i>
+                    </a>
+                    <div class="Mini-Cart">
+                        <div class="MiniCartHeading">
+                            <h2><span>5</span> items In Cart</h2>
+                        </div>
+                        <hr>
+                        <div class="MinicartContent D-F">
+                            <div class="MinicartProductImage">
+                                <img src="../Assets/Adidas Product/01 - Copy.jpg" alt="">
+                            </div>
+                            <div class="MinicartProductDetails">
+                                <a href="#">
+                                    <h3>TRC Blaze Knit Unisex Sneakers</h3>
+                                </a>
+                                <a href="../Brand page links/Puma.html">
+                                    <h4>By PUMA</h4>
+                                </a>
+                                <h5>1999 ₹</h5>
+                            </div>
+                            <div class="MiniCartProductRemoverBtndiv">
+                                <a href="#"><i class="fa-solid fa-x fa-sm" style="color: #000000;"></i></a>
+                            </div>
+                        </div>
+                        <div class="MinicartContent D-F">
+                            <div class="MinicartProductImage">
+                                <img src="../Assets/Adidas Product/03 - Copy.jpg" alt="">
+                            </div>
+                            <div class="MinicartProductDetails">
+                                <a href="#">
+                                    <h3>TRC Blaze Knit Unisex Sneakers</h3>
+                                </a>
+                                <a href="../Brand page links/Puma.html">
+                                    <h4>By PUMA</h4>
+                                </a>
+                                <h5>1999 ₹</h5>
+                            </div>
+                            <div class="MiniCartProductRemoverBtndiv">
+                                <a href="#"><i class="fa-solid fa-x fa-sm" style="color: #000000;"></i></a>
+                            </div>
+                        </div>
+                        <div class="MinicartContent D-F">
+                            <div class="MinicartProductImage">
+                                <img src="../Assets/Adidas Product/02 - Copy.jpg" alt="">
+                            </div>
+                            <div class="MinicartProductDetails">
+                                <a href="#">
+                                    <h3>TRC Blaze Knit Unisex Sneakers</h3>
+                                </a>
+                                <a href="../Brand page links/Puma.html">
+                                    <h4>By PUMA</h4>
+                                </a>
+                                <h5>1999 ₹</h5>
+                            </div>
+                            <div class="MiniCartProductRemoverBtndiv">
+                                <a href="#"><i class="fa-solid fa-x fa-sm" style="color: #000000;"></i></a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="Minicarttotal">
+                            <h2>Subtotal</h2>
+                            <h1>
+                                1755$
+                            </h1>
+                        </div>
+                        <div class="MiniCartButton">
+                            <button>Checkout</button>
+                            <button>View Cart</button>
+                        </div>
+                    </div>
+                </div>
         </nav>
     </section>
     <section class="BrandSection">
