@@ -7,7 +7,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Borel&family=Lato:wght@700&family=PT+Sans&family=Roboto:wght@300&family=Work+Sans&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Borel&family=Inter:wght@600&family=Lato:wght@700&family=PT+Sans&family=Roboto:wght@300&family=Work+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Inter:wght@600&family=Lato:wght@700&family=PT+Sans&family=Roboto:wght@300&family=Work+Sans&display=swap");
 
 * {
   margin: 0px;
@@ -153,23 +153,21 @@ h2 {
   border-spacing: 0px !important;
   font-variant: normal;
   margin: 20px 0px;
-  
 }
-.BillingDiv table tbody tr  {
+.BillingDiv table tbody tr {
   height: 50px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   border-bottom: 1px solid black;
   text-transform: uppercase;
   font-size: 14px;
-  
 }
 .BillingDiv table tbody tr td {
   border-bottom: 1px solid gray;
 }
-.BillingDiv table tbody tr:nth-child(4) td{
+.BillingDiv table tbody tr:nth-child(4) td {
   border: 0;
 }
-.BillingDiv table tbody tr:nth-child(4) th{
+.BillingDiv table tbody tr:nth-child(4) th {
   border: 0;
 }
 .BillingDiv table tbody tr th {
@@ -376,7 +374,7 @@ nav {
 .Dis p span {
   color: #e23e57;
 }
-.ContactSectionRight button{
+.ContactSectionRight button {
   width: 70px;
   height: 35px;
   background-color: gray;
@@ -386,10 +384,10 @@ nav {
   border-radius: 25px;
   margin-top: 10px;
 }
-.ContactSectionRight button:hover{
- color: black;
- background-color: rgb(208, 205, 205);
- cursor: pointer;
+.ContactSectionRight button:hover {
+  color: black;
+  background-color: rgb(208, 205, 205);
+  cursor: pointer;
 }
 .Shop {
   width: 100px;
@@ -397,7 +395,7 @@ nav {
   background-color: #ff2e63;
   color: white;
 }
-#Shop a{
+#Shop a {
   color: black;
   text-decoration: none;
 }
@@ -1206,7 +1204,7 @@ nav {
   font-family: "Didact Gothic", sans-serif;
   color: rgb(81, 80, 80);
 }
-.AdidasProductDiv   {
+.AdidasProductDiv {
   margin: 15px 0px 15px 0px;
 }
 
@@ -1409,15 +1407,14 @@ nav {
 .coupon {
   justify-content: center;
   margin-top: 20px;
-
 }
 .coupon input {
   height: 35px;
   width: 190px;
   border: 2px solid black;
-padding: 0px 10px;
-font-family: "Didact Gothic", sans-serif;
-font-size: 16px;
+  padding: 0px 10px;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 16px;
 }
 .coupon button {
   height: 35px;
@@ -1498,12 +1495,12 @@ font-size: 16px;
 }
 .CheckoutPage {
   width: 100%;
-text-align: center;
+  text-align: center;
 }
 .CheckoutPage {
   margin-bottom: 20px;
 }
-.CheckoutPage button{
+.CheckoutPage button {
   width: 200px;
   height: 35px;
   background-color: gray;
@@ -1515,7 +1512,7 @@ text-align: center;
   transition: 0.2s ease-in;
   font-family: "Didact Gothic", sans-serif;
 }
-.CheckoutPage button:hover{
+.CheckoutPage button:hover {
   color: black;
   background-color: rgb(228, 221, 221);
   cursor: pointer;
@@ -1944,16 +1941,16 @@ text-align: center;
   font-size: 14px;
   font-family: "Didact Gothic", sans-serif;
 }
-.MiniCartButton button a{
- color: white;
- text-decoration: none;
+.MiniCartButton button a {
+  color: white;
+  text-decoration: none;
 }
 
 .MiniCartButton button:hover {
   background-color: rgb(197, 188, 188);
   cursor: pointer;
 }
-.topBtn{
+.topBtn {
   height: 40px;
   width: 30px;
   background-color: rgb(250, 247, 247);
@@ -1966,17 +1963,17 @@ text-align: center;
   right: 60px;
   z-index: 999;
 }
-.topBtn i{
- color: white;
+.topBtn i {
+  color: white;
 }
-.topBtn button{
+.topBtn button {
   color: black;
   background-color: transparent;
   border: none;
   font-size: 14px;
   font-family: "Didact Gothic", sans-serif;
 }
-.topBtn button a{
+.topBtn button a {
   color: black;
   text-decoration: none;
 }
@@ -2167,13 +2164,70 @@ text-align: center;
   }
   .footer {
     gap: 50px;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    position: relative;
+   flex-direction: column;
+   padding: 0px 20px;
   }
+  
+  .SingleProContainer {
+    flex-direction: column;
+  }
+  .SingleProductShopDiv {
+    width: 100%;
+  }
+  .pdiscription {
+    width: 100%;
+  }
+  .pdiscription h3 b {
+    font-size: 18px;
+  }
+  .CustomerReviewdiv h1 {
+    font-size: 25px;
+  }
+  .FeaturedText h2 {
+    font-size: 20px;
+  }
+  .ViewAllBtnInFeaturedProducts a {
+    font-size: 14px;
+  }
+  .FeaturedProductsUnderProduct {
+    width: 100%;
+  }
+  .Item {
+    width: 145px;
+  }
+  .ItemPhoto img {
+    height: 145px;
+  }
+  .CartTop{
+    margin-top: 70px;
+  }
+  .CartBottom {
+    flex-direction: column; 
+  }
+  .CartTop h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .CartBottomLeft{
+    width: 100%;
+  }
+
+  .CartBottomLeft table tbody tr td {
+    font-size: 75%;
 }
+.CartBottomLeft table tbody tr td img {
+  height: 70px;
+}
+.CartDiv{
+  width: 90vw;
+  margin: auto;
+}
+.CartBottomRight{
+  width: 100%;
+  margin-top: 30px;
+}
+}
+
 @media (max-width: 391px) {
   .Item {
     padding: 10px 5px;
@@ -2184,6 +2238,36 @@ text-align: center;
   .ItemPhoto img {
     height: 170px;
   }
+  .SingleProContainer {
+    flex-direction: column;
+  }
+  .SingleProductShopDiv {
+    width: 100%;
+  }
+  .pdiscription {
+    width: 100%;
+  }
+  .pdiscription h3 b {
+    font-size: 18px;
+  }
+  .CustomerReviewdiv h1 {
+    font-size: 25px;
+  }
+  .FeaturedText h2 {
+    font-size: 20px;
+  }
+  .ViewAllBtnInFeaturedProducts a {
+    font-size: 14px;
+  }
+  .FeaturedProductsUnderProduct {
+    width: 100%;
+  }
+  .Item {
+    width: 145px;
+  }
+  .ItemPhoto img {
+    height: 145px;
+  }
 }
 
 @media (max-width: 395px) {
@@ -2193,12 +2277,12 @@ text-align: center;
   .BLogo {
     height: 50px;
   }
-  .Item {
+  /* .Item {
     width: 160px;
   }
   .ItemPhoto img {
     height: 155px;
-  }
+  } */
   .product {
     width: 160px;
   }
@@ -2219,5 +2303,36 @@ text-align: center;
   }
   .product img {
     height: 150px;
+  }
+  
+  .SingleProContainer {
+    flex-direction: column;
+  }
+  .SingleProductShopDiv {
+    width: 100%;
+  }
+  .pdiscription {
+    width: 100%;
+  }
+  .pdiscription h3 b {
+    font-size: 18px;
+  }
+  .CustomerReviewdiv h1 {
+    font-size: 25px;
+  }
+  .FeaturedText h2 {
+    font-size: 20px;
+  }
+  .ViewAllBtnInFeaturedProducts a {
+    font-size: 14px;
+  }
+  .FeaturedProductsUnderProduct {
+    width: 100%;
+  }
+  .Item {
+    width: 140px;
+  }
+  .ItemPhoto img {
+    height: 145px;
   }
 }
