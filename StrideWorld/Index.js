@@ -73,29 +73,3 @@ if (close) {
     });
 }
 
-
-
-// // toggling of Mini cart
-
-// let cartBtnPts = document.getElementsByClassName("cartIconInNavbar")
-
-// cartBtnPts.addEventListener("click", () => {
-//     let CartDivBox = document.getElementById("MiniCart")
-//     if (CartDivBox.style.display = "none") {
-//         CartDivBox.style.display = "block"
-//     } else {CartDivBox.style.display = "block"
-        
-//     }
-// }
-// )
-
-// // document.getElementById('IconOfCart').onclick = function() {
-// //     let CartDivBox = document.getElementsByClassName("Mini-Cart")
-// //     CartDivBox.classList.toggle("togglecart")
-// // }
-
-
-
-
-// //
-// //  cartDiv.classList.toggle("ClickCartBtn");

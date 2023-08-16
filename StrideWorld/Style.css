@@ -94,8 +94,16 @@ h2 {
 .CartBottomLeft table tbody tr td:nth-child(3) {
   font-family: "Work Sans", sans-serif;
 }
-.CartBottomLeft table tbody tr td:nth-child(4) .CartQuantityCounter {
-  margin: auto;
+.CartBottomLeft table tbody tr td:nth-child(4) input {
+ width: 35px;
+ height: 30px;
+ font-family: "Work Sans", sans-serif;
+ font-size: 14px;
+ padding: 0px 3px;
+ font-weight: 700;
+}
+.CartBottomLeft table tbody tr td:nth-child(4) input:focus {
+outline: none;
 }
 .CartBottomLeft table tbody tr td:nth-child(5) {
   font-family: "Work Sans", sans-serif;
@@ -1873,6 +1881,7 @@ nav {
 
 .cartIconInNavbar {
   margin-left: 10px;
+  position: relative;
 }
 /* .togglecart{
   display: none;

@@ -136,7 +136,7 @@
             </div>
             <div class="Items2">
                 <div class="account">
-                    <a href=""><i class="fa-solid fa-user fa-xl" style="color: #000000;"></i></a>
+                    <i class="fa-solid fa-user fa-xl " id="AccountIcon" style="color: #000000;"></i>
                 </div>
                 <div class="MobilenavBarToggleDiv" style="display: none;">
                     <i class="fa-solid fa-bars fa-xl " id="MobilenavBarToggle" style="color: #000000;"></i>
@@ -146,7 +146,7 @@
                         <i class="fa-solid fa-cart-shopping fa-xl" id="IconOfCart" style="color: #000000;">
                         </i>
                     </a>
-                    <div class="Mini-Cart" >
+                    <div class="Mini-Cart">
                         <div class="MiniCartHeading">
                             <h2><span>5</span> items In Cart</h2>
                         </div>
@@ -259,61 +259,58 @@
                         </div>
                     </div> -->
                     <table>
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>Name</th>
-                                <th>Price</th>
-                                <th>Qty.</th>
-                                <th>Total</th>
-                                <th></th>
-                            </tr>
-                        </thead>
+                        <tr id="CartBoxHeading" style="background-color: orangered;">
+                            <th></th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Qty.</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                    </table>
+                    <table id="divToRemove">
+
                         <tbody>
-                            <tr>
+                            <tr class="cartProductDivRow">
                                 <td><a href="#"><img src="../Assets/Adidas Product/01.jpg" alt=""></a></td>
                                 <td>
-                                    <strong>TRC Blaze Knit Unisex Sneakers</strong>
+                                    <span class="cartProductTitle"><strong>TRC Blaze Knit Unisex
+                                            Sneakers</strong></span>
                                     <a href="">
                                         <p>By NIKE</p>
                                     </a>
                                 </td>
                                 <td><strong>2544$</strong></td>
                                 <td>
-                                    <div class="CartQuantityCounter D-F">
-                                        <button>-</button>
-                                        <input type="text" value="1">
-                                        <button>+</button>
-                                    </div>
+
+                                    <input type="number" value="1">
+
                                 </td>
                                 <td><b>2599$ </b></td>
-                                <td><a href=""> <i class="fa-solid fa-x fa-sm" id="removeMainCartItem"
-                                            style="color: #000000;"></i></a></td>
+                                <td><i class="fa-solid fa-x fa-sm" id="removeMainCartItem" style="color: #000000;"></i>
+                                    </i>
+                                </td>
                             </tr>
-                        </tbody>
-                        <tbody>
+
                             <tr>
                                 <td><a href="#"><img src="../Assets/Adidas Product/02.jpg" alt=""></a></td>
                                 <td>
                                     <strong>TRC Blaze Knit Unisex Sneakers</strong>
-                                    <a href="">
+                                    <a href="#">
                                         <p>By NIKE</p>
                                     </a>
                                 </td>
                                 <td><strong>2544$</strong></td>
                                 <td>
-                                    <div class="CartQuantityCounter D-F">
-                                        <button>-</button>
-                                        <input type="text" value="1">
-                                        <button>+</button>
-                                    </div>
+
+                                    <input type="number" value="1">
                                 </td>
                                 <td><b>2599$ </b></td>
-                                <td><a href=""> <i class="fa-solid fa-x fa-sm" id="removeMainCartItem"
-                                            style="color: #000000;"></i></a></td>
+                                <td><i class="fa-solid fa-x fa-sm" class="removeMainCartItem" style="color: #000000;">
+                                    </i>
+                                </td>
                             </tr>
-                        </tbody>
-                        <tbody>
+
                             <tr>
                                 <td><a href="#"><img src="../Assets/Adidas Product/03.jpg" alt=""></a></td>
                                 <td>
@@ -324,18 +321,17 @@
                                 </td>
                                 <td><strong>2544$</strong></td>
                                 <td>
-                                    <div class="CartQuantityCounter D-F">
-                                        <button>-</button>
-                                        <input type="text" value="1">
-                                        <button>+</button>
-                                    </div>
+
+                                    <input type="number" value="1">
+
                                 </td>
                                 <td><b>2599$ </b></td>
-                                <td><a href=""> <i class="fa-solid fa-x fa-sm" id="removeMainCartItem"
-                                            style="color: #000000;"></i></a></td>
+                                <td><i class="fa-solid fa-x fa-sm" class="removeMainCartItem" style="color: #000000;">
+                                    </i>
+                                </td>
                             </tr>
-                        </tbody>
-                        <tbody>
+
+
                             <tr>
                                 <td><a href="#"><img src="../Assets/Adidas Product/04.jpg" alt=""></a></td>
                                 <td>
@@ -346,15 +342,15 @@
                                 </td>
                                 <td><strong>2544$</strong></td>
                                 <td>
-                                    <div class="CartQuantityCounter D-F">
-                                        <button>-</button>
-                                        <input type="text" value="1">
-                                        <button>+</button>
-                                    </div>
+
+                                    <input type="number" value="1">
+
                                 </td>
                                 <td><b>2599$ </b></td>
-                                <td><a href=""> <i class="fa-solid fa-x fa-sm" id="removeMainCartItem"
-                                            style="color: #000000;"></i></a></td>
+                                <td><i class="fa-solid fa-x fa-sm" class="removeMainCartItem" style="color: #000000;">
+                                    </i>
+
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -418,7 +414,7 @@
                                     <th><strong>Total</strong></th>
                                     <td><strong>2,000$</strong></td>
                                 </tr>
-                                
+
                             </tbody>
                         </table>
                         <div class="CheckoutPage">
@@ -509,6 +505,52 @@
             </div>
         </div>
     </section>
+    <script src="../Index.js"></script>
+    <script>
+        if (document.readyState == "loading") {
+            document.addEventListener("DOMContentLoaded", ready)
+        } else {
+            ready();
+        }
+        function ready() {
+            var table = document.getElementById('divToRemove');
+
+            var rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+            for (var i = 0; i < rows.length; i++) {
+                var row = rows[i];
+                var td = row.getElementsByTagName('td');
+                for (let j = 0; j < td.length; j++) {
+                    const RemoveBtn = td[j];
+                    RemoveBtn.addEventListener('click', removeCart)
+                }
+                function removeCart(event) {
+                    var btnClicked = event.target;
+                    btnClicked.parentElement.parentElement.remove()
+
+                }
+            }
+
+        }
+
+
+
+        // CHANGING HTML
+
+        // function updateTotal(params) {
+        //     let cartcontent = document.getElementsByClassName('SingleProContainer')
+
+        // }
+
+
+        // for (let i = 0; i < tdElements[5].length; i++) {
+        //                 let button = removeCartBTns[i];
+        //                 button.addEventListener('click', removeCartItem)
+        //             }
+        //             function removeCartItem(event) {
+        //                 var buttonClicked = event.target
+        //                 buttonClicked.parentElement.remove();
+        //             }
+    </script>
 </body>
 
 </html>
