@@ -73,3 +73,63 @@ if (close) {
     });
 }
 
+if (document.readyState == "loading") {
+    document.addEventListener("DOMContentLoaded", ready)
+} else {
+    ready();
+}
+function ready() {
+    var table = document.getElementById('divToRemove');
+
+    var rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+    for (var i = 0; i < rows.length; i++) {
+        var row = rows[i];
+        var td = row.getElementsByTagName('td');
+        const RemoveBtn = td[4];
+        RemoveBtn.addEventListener('click', removeCart)
+
+        var updateQuantityInputs = document.getElementsByClassName('productquantityincart')
+        for (let i = 0; i < updateQuantityInputs.length; i++) {
+            const input = updateQuantityInputs[i];
+            input.addEventListener('change', quantityChanged)
+
+        }
+
+
+        function removeCart(event) {
+            var btnClicked = event.target;
+            btnClicked.parentElement.parentElement.remove()
+            updateTotal();
+        }
+
+
+    }
+
+}
+
+function quantityChanged(event) {
+    var input = event.target
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 0;
+    }
+    updateTotal();
+}
+
+
+// CHANGING HTML
+
+function updateTotal() {
+    var cartcontentContainer = document.getElementsByClassName('ContentBox')[0]
+    var CartBoxs = cartcontentContainer.getElementsByClassName('cartProductDivRow')
+    var total = 0;
+    for (let b = 0; b < CartBoxs.length; b++) {
+        const cartBox = CartBoxs[b];
+        let priceElement = cartBox.getElementsByClassName('PriceInCart')[0]
+        var price = parseFloat(priceElement.innerText.replace("$", ""));
+        let QuantityElement = cartBox.getElementsByClassName('productquantityincart')[0]
+        let quantity = QuantityElement.value
+        total = total + (price * quantity);
+
+        document.getElementsByClassName('TotalIncart')[0].innerText = '$' + total
+    }
+}

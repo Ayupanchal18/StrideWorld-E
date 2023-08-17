@@ -258,8 +258,8 @@
                             $1999
                         </div>
                     </div> -->
-                    <table>
-                        <tr id="CartBoxHeading" style="background-color: orangered;">
+                    <table >
+                        <tr  id="CartBoxHeading" >
                             <th></th>
                             <th>Name</th>
                             <th>Price</th>
@@ -269,26 +269,25 @@
                         </tr>
                     </table>
                     <table id="divToRemove">
-
-                        <tbody>
+                        <tbody class="ContentBox">
                             <tr class="cartProductDivRow">
                                 <td><a href="#"><img src="../Assets/Adidas Product/01.jpg" alt=""></a></td>
                                 <td>
                                     <span class="cartProductTitle"><strong>TRC Blaze Knit Unisex
                                             Sneakers</strong></span>
-                                    <a href="">
+                                    <a href="#">
                                         <p>By NIKE</p>
                                     </a>
                                 </td>
-                                <td><strong>2544$</strong></td>
+                                <td class="PriceInCart">999$</td>
                                 <td>
 
-                                    <input type="number" value="1">
+                                    <input type="number" value="1" class="productquantityincart">
 
                                 </td>
-                                <td><b>2599$ </b></td>
-                                <td><i class="fa-solid fa-x fa-sm" id="removeMainCartItem" style="color: #000000;"></i>
-                                    </i>
+
+                                <td><i class="fa-solid fa-x fa-sm" class="removeMainCartItem" style="color: #000000;"></i>
+                                    
                                 </td>
                             </tr>
 
@@ -302,10 +301,9 @@
                                 </td>
                                 <td><strong>2544$</strong></td>
                                 <td>
-
-                                    <input type="number" value="1">
+                                    <input type="number" value="1" class="productquantityincart">
                                 </td>
-                                <td><b>2599$ </b></td>
+
                                 <td><i class="fa-solid fa-x fa-sm" class="removeMainCartItem" style="color: #000000;">
                                     </i>
                                 </td>
@@ -325,7 +323,7 @@
                                     <input type="number" value="1">
 
                                 </td>
-                                <td><b>2599$ </b></td>
+
                                 <td><i class="fa-solid fa-x fa-sm" class="removeMainCartItem" style="color: #000000;">
                                     </i>
                                 </td>
@@ -346,7 +344,7 @@
                                     <input type="number" value="1">
 
                                 </td>
-                                <td><b>2599$ </b></td>
+
                                 <td><i class="fa-solid fa-x fa-sm" class="removeMainCartItem" style="color: #000000;">
                                     </i>
 
@@ -400,7 +398,7 @@
                             <tbody>
                                 <tr>
                                     <th><strong>SubTotal</strong></th>
-                                    <td>1,888</td>
+                                    <td class="TotalIncart">$0</td>
                                 </tr>
                                 <tr>
                                     <th><strong>Discount</strong></th>
@@ -506,51 +504,7 @@
         </div>
     </section>
     <script src="../Index.js"></script>
-    <script>
-        if (document.readyState == "loading") {
-            document.addEventListener("DOMContentLoaded", ready)
-        } else {
-            ready();
-        }
-        function ready() {
-            var table = document.getElementById('divToRemove');
-
-            var rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
-            for (var i = 0; i < rows.length; i++) {
-                var row = rows[i];
-                var td = row.getElementsByTagName('td');
-                for (let j = 0; j < td.length; j++) {
-                    const RemoveBtn = td[j];
-                    RemoveBtn.addEventListener('click', removeCart)
-                }
-                function removeCart(event) {
-                    var btnClicked = event.target;
-                    btnClicked.parentElement.parentElement.remove()
-
-                }
-            }
-
-        }
-
-
-
-        // CHANGING HTML
-
-        // function updateTotal(params) {
-        //     let cartcontent = document.getElementsByClassName('SingleProContainer')
-
-        // }
-
-
-        // for (let i = 0; i < tdElements[5].length; i++) {
-        //                 let button = removeCartBTns[i];
-        //                 button.addEventListener('click', removeCartItem)
-        //             }
-        //             function removeCartItem(event) {
-        //                 var buttonClicked = event.target
-        //                 buttonClicked.parentElement.remove();
-        //             }
-    </script>
+    <script src="../cart.js"></script>
 </body>
 
 </html>

@@ -70,7 +70,12 @@ h2 {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px */
 }
-
+#CartBoxHeading{
+  height: 50px;
+  width: 100%;
+  font-family: "Didact Gothic", sans-serif;
+  background-color: #ff0000;
+}
 .CartBottomLeft table thead tr th {
   font-family: "Didact Gothic", sans-serif;
 }
@@ -1864,16 +1869,22 @@ nav {
 
 .Mini-Cart {
   width: 400px;
+  /* height: 600px; */
   background-color: rgb(248, 244, 244);
   position: absolute;
   top: 100%;
-  overflow: auto;
+  
   right: 0;
   padding: 10px 10px;
   z-index: 1000;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   display: none;
+}
+.MiniCartItemDiv {
+  
+  width: 100%;
+  overflow: auto;
 }
 .cartIconInNavbar:hover .Mini-Cart {
   display: block;
@@ -1898,6 +1909,7 @@ nav {
   align-items: center;
   justify-content: space-evenly;
   margin: 10px 10px;
+  display: flex;
 }
 .MinicartProductDetails {
   padding: 0px 5px;
@@ -1988,6 +2000,9 @@ nav {
 }
 
 @media screen and (max-width: 477px) {
+  .Search-input{
+    display: none;
+  }
   .dropdown {
     display: none;
   }
