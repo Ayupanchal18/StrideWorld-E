@@ -1521,6 +1521,12 @@ nav {
   font-family: "Didact Gothic", sans-serif;
   text-transform: uppercase;
   text-align: start;
+  
+  
+  
+  
+  
+  
   margin: auto;
 }
 .CheckoutPage {
@@ -1531,16 +1537,17 @@ nav {
   margin-bottom: 20px;
 }
 .CheckoutPage button {
-  width: 200px;
-  height: 35px;
-  background-color: gray;
-  color: white;
-  font-size: 12px;
-  border: 0;
-  border-radius: 20px;
-  padding: 0px 10px;
-  transition: 0.2s ease-in;
-  font-family: "Didact Gothic", sans-serif;
+ width: 250px;
+ height: 40px;
+ background-color: gray;
+ color: white;
+ font-size: 13px;
+ border: 0;
+ border-radius: 25px;
+ padding: 0px 18px;
+ transition: 0.2s ease-in;
+ font-family: "Didact Gothic", sans-serif;
+
 }
 .CheckoutPage button:hover {
   color: black;
@@ -2147,6 +2154,9 @@ nav {
 }
 
 @media screen and (max-width: 477px) {
+  .SingleProductSection {
+    width: 90vw;
+  }
   .ContectSectionDiv {
     flex-direction: column;
     width: 90vw;
@@ -2381,11 +2391,13 @@ nav {
     padding: 10px 5px;
     background-color: #f6f6f6;
     position: relative;
-    width: 165px;
-
+    width: 160px;
   }
   .ItemPhoto img {
     height: 150px;
+  }
+  .ItemDiscription h3 {
+    font-size: 16px;
   }
   .productSection {
     width: 90vw;
@@ -2465,9 +2477,7 @@ nav {
   .FeaturedProductsUnderProduct {
     width: 100%;
   }
-  .ItemPhoto img {
-    /* height: 145px; */
-  }
+  
   .CartTop {
     margin-top: 70px;
   }
@@ -2511,9 +2521,7 @@ nav {
     background-color: #f6f6f6;
     position: relative;
   }
-  .ItemPhoto img {
-    /* height: 170px; */
-  }
+
   .SingleProContainer {
     flex-direction: column;
   }
@@ -2552,9 +2560,7 @@ nav {
 }
 
 @media (max-width: 361px) {
-  .ItemPhoto img {
-    /* height: 145px; */
-  }
+ 
   .product {
     width: 150px;
   }
@@ -2586,7 +2592,5 @@ nav {
   .FeaturedProductsUnderProduct {
     width: 100%;
   }
-  .ItemPhoto img {
-    /* height: 145px; */
-  }
+ 
 }
