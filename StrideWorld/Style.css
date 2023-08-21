@@ -8,7 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Borel&family=Lato:wght@700&family=PT+Sans&family=Roboto:wght@300&family=Work+Sans&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Borel&family=Inter:wght@600&family=Lato:wght@700&family=PT+Sans&family=Roboto:wght@300&family=Work+Sans&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Inter:wght@600&family=Lato:wght@700&family=PT+Sans&family=Poppins:wght@300&family=Roboto:wght@300&family=Work+Sans&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -675,6 +675,7 @@ nav {
   width: 80vw;
   margin: auto;
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 .featureItem {
   justify-content: space-evenly;
@@ -828,6 +829,9 @@ nav {
 .social {
   margin-top: 10px;
 }
+.social a {
+  margin-right: 3px;
+}
 
 .f-1 img {
   margin-bottom: 20px;
@@ -850,6 +854,9 @@ nav {
   transition: 0.2s ease;
   line-height: 22px;
   font-family: "Didact Gothic", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #465b52;
 }
 
 .f-2 ul a:hover {
@@ -860,7 +867,7 @@ nav {
   list-style: none;
 }
 #top-name {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   font-family: "Didact Gothic", sans-serif;
 }
@@ -875,13 +882,14 @@ nav {
 
 .store-link button {
   padding: 10px 10px;
-  border: 1px solid #088178;
+  border: 0;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   border-radius: 4px;
   margin-top: 25px;
   margin-bottom: 25px;
   transition: 0.2s ease;
   font-family: "Didact Gothic", sans-serif;
+  font-weight: 500;
 }
 .store-link button:hover {
   cursor: pointer;
@@ -987,10 +995,16 @@ nav {
   font-size: 14px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  margin: 10px 0px;
+}
+#ViewAll a {
+  color: black;
+  text-decoration: none;
 }
 .HomeProductTitle p {
   text-align: center;
   margin-top: 25px;
+  margin-bottom: 25px;
   font-size: 30px;
   font-family: "poppins", sans-serif;
   color: #ff0000;
@@ -998,15 +1012,18 @@ nav {
 
 #ViewAll:hover {
   cursor: pointer;
-  border: 0.5px solid gray;
+  background-color: rgb(220, 214, 214);
 }
 .Filters {
   text-align: end;
+  margin-bottom: 10px;
 }
 
 .Filters select {
-  height: 20px;
   font-family: "Didact Gothic", sans-serif;
+  padding: 0px 5px;
+  height: 30px;
+  font-size: 14px;
 }
 .Filters select option {
   font-family: "Didact Gothic", sans-serif;
@@ -1086,7 +1103,7 @@ nav {
   height: 200px;
 }
 .BlogDiscription h4 {
-  font-size: 12px;
+  font-size: 11px;
 }
 .BlogDiscription h3 {
   font-size: 21px;
@@ -1788,6 +1805,8 @@ nav {
 .SizeCatagory {
   display: flex;
   flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
 
 .SizeCatagory h3 {
@@ -1801,7 +1820,10 @@ nav {
   font-family: "Didact Gothic", sans-serif;
   margin-bottom: 10px;
 }
-
+.BrandCatogary {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
 .ChoseColor h3 {
   font-size: 16px;
   font-family: "Didact Gothic", sans-serif;
@@ -1826,19 +1848,14 @@ nav {
   width: 100px;
   justify-content: space-between;
 }
-/* .PriceRange{
- 
-}
-.PriceRange input{
-  width: 100px;
-} */
+
 #CatagoryHr {
   margin: 10px 0px;
 }
 
 .PriceRange input[type="range"] {
   -webkit-appearance: none;
-  width: 100%;
+  width: 100px;
 }
 .PriceRange input[type="range"]:focus {
   outline: 0;
@@ -1999,29 +2016,29 @@ nav {
   color: black;
   text-decoration: none;
 }
-.Slpage{
-  background-color: #E3FDFD;
+.Slpage {
+  background-color: #e3fdfd;
   width: 100%;
   height: 100vh;
-   /* display: flex;
+  /* display: flex;
   justify-content: end;
   align-items: center; */
   position: relative;
   background-image: url(../StrideWorld/Assets/Loginbg.jpg);
- background-size: cover;
- background-repeat: no-repeat;
- background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.Sldiv{
-  background-color: #C3BEF0;
+.Sldiv {
+  background-color: #c3bef0;
   height: 400px;
   width: 300px;
- position: absolute;
- right: 200px;
- bottom: 130px;
- padding: 10px 15px;
- border-radius: 4px;
- border: 0;
+  position: absolute;
+  right: 200px;
+  bottom: 130px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 0;
 }
 #Logibdiv {
   margin-top: 60px;
@@ -2041,29 +2058,29 @@ nav {
   margin: 5px 0px 10px 0px;
 }
 #Logibdiv input:focus {
-outline: none;
+  outline: none;
 }
-#LoginPageToggler{
-  text-decoration: underline ;
+#LoginPageToggler {
+  text-decoration: underline;
 }
-#signupPageToggler{
-  text-decoration: none ;
+#signupPageToggler {
+  text-decoration: none;
 }
 .Heading {
   margin-top: 30px;
 }
-.Heading h2{
+.Heading h2 {
   font-size: 18px;
   cursor: pointer;
 }
 .Heading {
   justify-content: space-around;
 }
-#Logibdiv label{
+#Logibdiv label {
   font-size: 14px;
   font-family: "Didact Gothic", sans-serif;
 }
-#Logibdiv button{
+#Logibdiv button {
   height: 35px;
   width: 100%;
   background-color: #ff0000;
@@ -2072,17 +2089,16 @@ outline: none;
   padding: 0px 5px;
   border: none;
   border-radius: 25px;
-margin-top: 30px;
+  margin-top: 30px;
 }
-#Logibdiv button:hover{
- background-color: #de3f3f;
- cursor: pointer;
+#Logibdiv button:hover {
+  background-color: #de3f3f;
+  cursor: pointer;
 }
 #SignupDiv {
   margin-top: 40px;
   width: 100%;
   display: none;
-
 }
 
 #SignupDiv input {
@@ -2097,24 +2113,24 @@ margin-top: 30px;
   margin: 5px 0px 10px 0px;
 }
 #SignupDiv input:focus {
-outline: none;
+  outline: none;
 }
 
 .Heading {
   margin-top: 30px;
 }
-.Heading h2{
+.Heading h2 {
   font-size: 18px;
   cursor: pointer;
 }
 .Heading {
   justify-content: space-around;
 }
-#SignupDiv label{
+#SignupDiv label {
   font-size: 14px;
   font-family: "Didact Gothic", sans-serif;
 }
-#SignupDiv button{
+#SignupDiv button {
   height: 35px;
   width: 100%;
   background-color: #ff0000;
@@ -2123,41 +2139,91 @@ outline: none;
   padding: 0px 5px;
   border: none;
   border-radius: 25px;
-margin-top: 20px;
+  margin-top: 20px;
 }
-#SignupDiv button:hover{
- background-color: #de3f3f;
- cursor: pointer;
+#SignupDiv button:hover {
+  background-color: #de3f3f;
+  cursor: pointer;
 }
-
-
-
-
 
 @media screen and (max-width: 477px) {
+  .ContectSectionDiv {
+    flex-direction: column;
+    width: 90vw;
+  }
+  .ContactSectionLeft {
+    width: 100%;
+  }
+   .ContactSectionLeft iframe {
+    height: 330px;
+    width: 330px;
+   }
+   .ContactSectionRight {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .ContactSectionRight h2{
+    font-size: 25px;
+  }
+  .contactInput input{
+    width: 100%;
+  }
+  .Inputs{
+    flex-direction: column;
+  }
+  .ContactSectionRight textarea {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .Sldiv {
+    right: 0px;
+    left: 38px;
+  }
+  .Mini-Cart{
+    width: 350px;
+  }
+  .AboutUsSection {
+    width: 90vw;
+  }
+  .AboutUsDiv {
+    height: auto;
+    padding: 10px 5px ;
+    text-align: center;
+  }
+  .AboutUsDiv p {
+    word-spacing: 5px;
+  }
+  .trendingtext {
+    font-size: 25px;
+  }
+  .BlogSectionTopDivText{
+    left: 75px;
+  }
+  .MainBlogPage {
+    width: 90vw;
+  }
   .shopSection {
     width: 90vw;
-    
-}
-.CatagoryAndProductContainer {
-  flex-direction: column;
-}
-.CatagoriesSection {
-  display: flex;
-  width: 100%;
-  padding: 10px 10px;
-  font-size: 12px;
-  font-family: "Didact Gothic", sans-serif;
-  justify-content: space-between;
-  position: unset;
-  z-index: 0;
-}
-.PriceRange{
-  width: 100px;
-}
-.SizeCatagory {
-  padding: 0px 5px;
-}
+  }
+  .CatagoryAndProductContainer {
+    flex-direction: column;
+  }
+  .CatagoriesSection {
+    display: flex;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 12px;
+    font-family: "Didact Gothic", sans-serif;
+    justify-content: space-between;
+    position: unset;
+    z-index: 0;
+  }
+  .PriceRange {
+    width: 100px;
+  }
+  .SizeCatagory {
+    padding: 0px 5px;
+  }
   .Items {
     width: 50%;
   }
@@ -2205,6 +2271,7 @@ margin-top: 20px;
     background-color: #eee;
     padding: 30px 0px 0px 20px;
     transition: 0.3s;
+    z-index: 999;
   }
   #CatmenuMobileOff {
     display: none;
@@ -2314,10 +2381,11 @@ margin-top: 20px;
     padding: 10px 5px;
     background-color: #f6f6f6;
     position: relative;
-    width: 185px;
+    width: 165px;
+
   }
   .ItemPhoto img {
-    height: 170px;
+    height: 150px;
   }
   .productSection {
     width: 90vw;
@@ -2355,7 +2423,8 @@ margin-top: 20px;
     margin-bottom: 10px;
   }
   .features img {
-    height: 63px;
+    height: 50px;
+    margin: auto;
   }
   .newsletter {
     justify-content: space-evenly;
@@ -2396,11 +2465,8 @@ margin-top: 20px;
   .FeaturedProductsUnderProduct {
     width: 100%;
   }
-  .Item {
-    width: 145px;
-  }
   .ItemPhoto img {
-    height: 145px;
+    /* height: 145px; */
   }
   .CartTop {
     margin-top: 70px;
@@ -2444,10 +2510,9 @@ margin-top: 20px;
     padding: 10px 5px;
     background-color: #f6f6f6;
     position: relative;
-    width: 170px;
   }
   .ItemPhoto img {
-    height: 170px;
+    /* height: 170px; */
   }
   .SingleProContainer {
     flex-direction: column;
@@ -2473,27 +2538,11 @@ margin-top: 20px;
   .FeaturedProductsUnderProduct {
     width: 100%;
   }
-  .Item {
-    width: 145px;
-  }
-  .ItemPhoto img {
-    height: 145px;
-  }
-}
 
 @media (max-width: 395px) {
-  /* nav{
-    padding: 0px 30px;
-  } */
   .BLogo {
     height: 50px;
   }
-  /* .Item {
-    width: 160px;
-  }
-  .ItemPhoto img {
-    height: 155px;
-  } */
   .product {
     width: 160px;
   }
@@ -2503,17 +2552,14 @@ margin-top: 20px;
 }
 
 @media (max-width: 361px) {
-  .Item {
-    width: 155px;
-  }
   .ItemPhoto img {
-    height: 145px;
+    /* height: 145px; */
   }
   .product {
     width: 150px;
   }
   .product img {
-    height: 150px;
+    height: 145px;
   }
 
   .SingleProContainer {
@@ -2540,10 +2586,7 @@ margin-top: 20px;
   .FeaturedProductsUnderProduct {
     width: 100%;
   }
-  .Item {
-    width: 140px;
-  }
   .ItemPhoto img {
-    height: 145px;
+    /* height: 145px; */
   }
 }

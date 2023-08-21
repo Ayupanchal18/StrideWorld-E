@@ -28,6 +28,7 @@ function RemoveCartItems(event) {
 
 }
 function AddCrtClicked(event) {
+    
     let button = event.target
     let shopProduct = button.parentElement.parentElement
     let productTitle = shopProduct.getElementsByClassName('productTitleIndPage')[0].innerText;
