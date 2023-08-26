@@ -2154,6 +2154,9 @@ nav {
 }
 
 @media screen and (max-width: 477px) {
+  .SoldCounter h3{
+    font-size: 10px;
+  }
   .SingleProductSection {
     width: 90vw;
   }
@@ -2397,7 +2400,7 @@ nav {
     height: 150px;
   }
   .ItemDiscription h3 {
-    font-size: 16px;
+    font-size: 12px;
   }
   .productSection {
     width: 90vw;
